@@ -1,14 +1,22 @@
-1. Extrae todo el ZIP.
-2. Abre en VS Code la carpeta 02-limbus-react.
-3. Abre una terminal donde está package.json. Usa Node.js 20 o superior.
-4. Ejecuta npm ci.
-5. Ejecuta npm start y abre http://localhost:3000/.
-6. Entra a Tienda, agrega un peluche y abre Carrito desde la barra de navegación.
+LIMBUS REACT
 
-Pruebas del carrito: npm run test:ci -- Cart.test.jsx
-Todas las pruebas: npm run test:ci
-Cobertura: npm run test:coverage
+Proyecto creado apartir de el repositorio del profesor, nuestro proyecto inicial fue el proyecto html de wuwa el cual "migramos" o "transformamos" a un proyecto react desde html segun las instrucciones vistas en clase, ese proyecto wuwa en react fue utilizado como "base" o como "maqueta" para realizar este proyecto sobre el videojuego limbus company (si gusta me manda un mensaje profe y le mando el repo del wuwa en react si tmb lo queria ver).
+Proyecto de Fullstack II. Aplicación web en React con una guía de personajes de Limbus Company y una tienda de peluches de demostración. El carrito guarda los productos en el navegador y los recupera al recargar la página.
+
+INSTRUCCIONES DE INSTALACION
+1. Descargar y Extraer todo el ZIP.
+2. Abre en VS Code la carpeta que contiene package.json,package-lock.json,src/ y public/.
+3. Abre una terminal en esa carpeta y ejecuta estos comandos. En Windows PowerShell puedes usar npm.cmd en lugar de npm (se necesita node.js)
+   -npm ci o npm install
+   -npm test (si desea ejecutar los test, creo que por protocolo se hacia de esta forma)
+   -npm start (en caso de que no se despliegue automaticamente la pagina en el navegador puede buscar http://localhost:3000/)
+
+PRUEBAS CON JEST
+-npm run test:ci
+-npm run test:ci -- Cart.test.jsx (en caso de correr los test solo del carrito)
+-npm run test:coverage --> Esta corre los test y genera un reporte de cobertura, se creara una carpeta nueva llamada coverage en la cual podra abrir un html para ver el reporte generado
+
 Compilación: npm run build
 
-Los precios en CLP y las imágenes del catálogo son de demostración.
+Los precios y los catalogos son de demostracion y no son datos reales, 
 El carrito se guarda en localStorage y funciona sin una API de compras.
